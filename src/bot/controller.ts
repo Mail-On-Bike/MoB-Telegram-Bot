@@ -10,7 +10,8 @@ function init() {
 	bot.onText(/\/help/, (message) => {
 		bot.sendMessage(
 			message.chat.id,
-			`Saludos, MoBikers.\n\nSoy un Bot desarrollado para dar asistencia básica a nuestro equipo.\n\nSi necesitas ver el mapa de talleres de bicicletas que tenemos registrado, por favor usa el comando /taller`
+			"<b>Saludos, MoBikers.</b>\n\nSoy un Bot desarrollado para dar asistencia básica a nuestro equipo.\n\nSi necesitas ver el mapa de talleres de bicicletas que tenemos registrado, por favor usa el comando /taller",
+			{ parse_mode: "HTML" }
 		);
 	});
 
